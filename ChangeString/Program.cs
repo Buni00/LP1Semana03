@@ -8,7 +8,12 @@ namespace ChangeString
         {
             Console.WriteLine("Escreva uma frase:");
             string frase = Console.ReadLine();
-            Console.WriteLine(frase);
+
+            Console.WriteLine("Escreva uma letra:");
+            char letra = Console.ReadLine();
+
+            
+            
         }
     }
 }
