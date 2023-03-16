@@ -10,10 +10,21 @@ namespace ChangeString
             string frase = Console.ReadLine();
 
             Console.WriteLine("Escreva uma letra:");
-            char letra = Console.ReadLine();
+            string letra = Console.ReadLine();
 
+            int letraConvert = Convert.ToInt32(letra[0]);
             
-            
+            for(int i = 0 ; i<frase.Length ; i++ )
+            {
+                int fraseConvert = Convert.ToInt32(frase[i]);
+                
+                if (fraseConvert != letraConvert)
+                {
+                    Console.Write(frase[i]);
+                }
+            }
+
+    
         }
     }
 }
