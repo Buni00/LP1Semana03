@@ -22,9 +22,7 @@ namespace ArraySums
                     Console.WriteLine($"valor na posição ({i},{j}): ");
                     float valor = float.Parse(Console.ReadLine());
 
-                    matrix[i , j] = valor;
-
-                    
+                    matrix[i , j] = valor;    
                 }
             }
 
