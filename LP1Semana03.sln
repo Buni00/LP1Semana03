@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerPerks", "PlayerPerks\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitBranching", "GitBranching\GitBranching.csproj", "{F817CFDF-EAB5-4E97-B82C-32B2E74EBA5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerAchievements", "PlayerAchievements\PlayerAchievements.csproj", "{2FD02865-84CF-499A-8CE8-6A0C3E403141}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{F817CFDF-EAB5-4E97-B82C-32B2E74EBA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F817CFDF-EAB5-4E97-B82C-32B2E74EBA5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F817CFDF-EAB5-4E97-B82C-32B2E74EBA5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FD02865-84CF-499A-8CE8-6A0C3E403141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD02865-84CF-499A-8CE8-6A0C3E403141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD02865-84CF-499A-8CE8-6A0C3E403141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD02865-84CF-499A-8CE8-6A0C3E403141}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
