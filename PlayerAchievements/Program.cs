@@ -11,11 +11,42 @@ namespace PlayerAchievements
 
             Achievements[] myAchievements = new Achievements[n];
 
-            for ( int i = 1; i <= n; i++)
+            for ( int i = 0; i < n; i++)
             {
-                Console.WriteLine($"Quais são os achievements do Jogador {i}");
+                Console.WriteLine($"O Jogador {i+1} tem o achievement 'DefeatOptionalBoss'? (s/n)");
+                string resposta = Console.ReadLine();
+
+                if( resposta == "s")
+                {
+                    myAchievements[i] |= Achievements.DefeatOptionalBoss;
+                }
+
+
+                Console.WriteLine($"O Jogador {i+1} tem o achievement 'FindHiddenLevel'? (s/n)");
+                resposta = Console.ReadLine();
+
+                if( resposta == "s")
+                {
+                    myAchievements[i] |= Achievements.FindHiddenLevel;
+                }
+
+
+                Console.WriteLine($"O Jogador {i+1} tem o achievement 'FinishGame'? (s/n)");
+                resposta = Console.ReadLine();
+
+                if( resposta == "s")
+                {
+                    myAchievements[i] |= Achievements.FinishGame;
+                }
+     
                 
             }
+
+            for ( int i = 0; i < n ; i++)
+            {
+                Console.WriteLine($"Achievements do Jogador {i+1}" +  $": {myAchievements[i]}");
+            }
+            
 
         }
     }
