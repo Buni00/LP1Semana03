@@ -45,6 +45,9 @@ namespace PlayerAchievements
             for ( int i = 0; i < n ; i++)
             {
                 Console.WriteLine($"Achievements do Jogador {i+1}" +  $": {myAchievements[i]}");
+
+                if(((myAchievements[i] & Achievements.DefeatOptionalBoss) == Achievements.DefeatOptionalBoss) & ((myAchievements[i] & Achievements.FindHiddenLevel) == Achievements.FindHiddenLevel) & ((myAchievements[i] & Achievements.FinishGame) == Achievements.FinishGame))
+                    Console.WriteLine("Completionist");
             }
             
 
