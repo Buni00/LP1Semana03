@@ -68,13 +68,47 @@ namespace PlayerPerks
                     }                   
                 }
 
+                if(wCounter % 2 != 0 || aCounter % 2 != 0 || sCounter % 2 != 0 || dCounter % 2 != 0 )
+                {
+                    myPerks &= ~Perks.None;
+                }
+
+                if (perks[i] != 'w' && perks[i] != 'a' && perks[i] != 's' && perks[i] != 'd')
+                {
+                    Console.WriteLine("Unknown perk!");
+                    return;
+                }
+                    
+
+
+
+
         
             }
 
+            if (myPerks !=0)
+                Console.WriteLine(myPerks);
+
             if ((myPerks & Perks.None)== Perks.None)
+            {
                 Console.WriteLine("No perks at all!");
 
-            Console.WriteLine(myPerks);
+            }
+                
+
+            if (((myPerks & Perks.Stealth) == Perks.Stealth) & (myPerks & Perks.DoubleJump) == Perks.DoubleJump)
+            {
+                Console.WriteLine("Silent jumper!");
+            }
+
+            if ((myPerks & Perks.AutoHeal) != Perks.AutoHeal)
+            {
+                Console.WriteLine("Not gonna make it!");
+
+            }
+                
+            
+            
             
 
         }
