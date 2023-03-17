@@ -6,7 +6,11 @@ namespace PlayerAchievements
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Qantos jogadores são: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            Achievements[] myAchievements = new Achievements[n];
+            
         }
     }
 }
